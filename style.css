@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Chelsea+Market|Josefin+Sans');
+
+body {
+    font-family: 'Josefin Sans', "Avenir Next", "Avenir", sans-serif;
+    background-color: #eaeaea;
+    margin: 0;
+    height: auto;  
+    max-width: 325px;
+}
+
+
+header {
+    padding-bottom: 20px;
+    background-color: #fbfcfd;
+}
+
+.header-logo {
+    position: relative;
+    top: 34px;
+    left: 30px;
+}
+
+.search-form {
+    position: relative;
+    bottom: 10px;
+    left: 200px;
+    width: 150px;
+}
+
+#search-btn {
+    position: relative;
+    left: -50px;
+    top: 17px;
+    background: transparent;
+    border: transparent;
+}
+
+.search {
+    color: black;
+    border: transparent;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    transition: width 0.5s;
+    text-transform: uppercase;
+    position: relative;
+    left: -27px;
+    
+    height: 12px;
+    font-family: JosefinSans;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #000000;
+
+}
+
+ a
+ {
+   text-decoration: none;
+   color: #232323;   
+   transition: color 0.3s ease;
+ }
+ 
+ a:hover
+ {
+   color: tomato;
+ }
+ 
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: -25px;
+   left: 270px;
+   width: 30px;
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 27px;
+   height: 2px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   
+   background: #000000;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: absolute;
+   width: 300px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   left: -230px;
+   background: #ededed;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+
+---!>
+
+main {
+    background-color: #fbfcfd;
+    margin: auto;
+    max-width: 900px;
+}
+
+
+ .main-block {
+    background-color: #fbfcfd;
+    font-weight: 18px; 
+
+ }
+
+
+ .info-block {
+     position: relative;
+     left: 26px;
+     height: 80px;
+     padding-top: 15px; 
+     line-height: 1.4; 
+     
+
+ }
+
+.info-block--center {
+    position: relative;
+    top: 15px;
+    left: 85px;
+}
+
+.info-block--height {
+    letter-spacing: 0.5px;
+    height: 70px;
+}
+
+.recipe__title {
+    font-weight: 18px;
+}
+
+.recipe__img {
+    width: 100%;
+}
+
+.recipe__subtitle {
+    font-weight: 12px;
+    font-family: OpenSans;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #555555;
+}
+
+hr {
+    opacity: 0.2;
+    background-color: #555555;
+}
+
+.main-block--height-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 40px;
+    height: 410px;
+
+}
+
+.complexity {
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-family: JosefinSans;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    color: #000000;
+    padding: 37 0 26 0;
+}
+
+.complexity__level {
+    margin: 10px;
+}
+
+.complexity__level:active {
+    font-weight: bold;
+}
+
+
+
+.comment__img {
+    float: left;
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+}
+
+.comment__author {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.social-networks {
+    align-content: space-between;
+}
+
+.social-networks a {
+    padding-left: 37px;
+}
+
+.btn {
+    border: solid 1px #c2c2c2;
+    padding: 10px 14px 8px 14px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    margin-right: 8px;
+}
+
+.btn:hover {
+    background-color: #eaeaea;
+    color: black;
+    transition: 2.8s ease;
+
+}
+
+.popular-now {
+    background: url(img/Clip5.png) no-repeat 100%;
+    background-size: 100%;
+    height: 398px;
+    padding-left: 32px;
+}
+
+.popular-now .title {
+    font-size: 32px;
+    color: #921026;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+    padding-top: 53px;
+    padding-bottom: 20px;
+}
+
+.popular-now h1 {
+    font-family: JosefinSans;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.popular-now .recipe__subtitle {
+    padding-top: 10px;
+}
+
+footer {
+    background-color: #323233;
+    height: 309px;
+    color: #5f5f60;
+}
+
+.footer-logo {
+    padding: 30px;
+}
+
+footer hr {
+    color: #999999;
+}
+
+
+.menu-footer {
+    position: relative;
+    top: -80px;
+    left: 100px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.menu-footer li {
+    color: #858586;
+    padding-bottom: 25px;
+}
+
+.footer-social-media {
+    visibility: hidden;
+}
+
+.rights {
+    visibility: hidden;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Lemon</title>
+</head>
+<body>
+        <header>            
+                <img class="header-logo" src="img/logo.png">            
+            <form class="search-form" action="" method="GET">
+                <button id="search-btn" type="submit"><img src="img/search.png" alt=""></button>
+                <input class="search" type="search" placeholder="find a recipe">
+            </form>
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Recipes</li></a>
+                    <a href="#"><li>Photo Galleries</li></a>
+                    <a href="#"><li>Video</li></a>
+                    <a href="#"><li>Categories</li></a>                     
+                  </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="main-block">
+                <img class="recipe__img" src="img/Clip1.png" alt="">
+                <div class="info-block info-block--height">
+                    <a href="#" class="info-block--center">GET IT RECIPE</a> 
+                </div>
+            </div>
+            <div class="main-block">
+                <img class="recipe__img" src="img/Clip2.png" alt="">
+                <div class="info-block">
+                    <a href="#" class="recipe__title">Raspberry & Cream Frozen Yogurt Pie</br></a>
+                    <span class="recipe__subtitle"><img src="img/clockicon.png" alt=""> 35mins | <img src="img/commenticon.png" alt=""> 7 <img src="img/viewicon.png" alt=""> views 14</span>
+                </div>
+            </div>
+            <div class="main-block">
+                <img class="recipe__img" src="img/Clip3.png" alt="">
+                <div class="info-block">
+                    <a href="#" class="recipe__title">Giant Ice Cream Sandwich </br></a>
+                    <span class="recipe__subtitle"><img src="img/clockicon.png" alt=""> 20mins | <img src="img/commenticon.png" alt=""> 4 <img src="img/viewicon.png" alt=""> 356</span> 
+                </div>  
+            </div>
+            <div class="main-block">
+                <img class="recipe__img" src="img/Clip4.png" alt="">
+                <div class="info-block">
+                    <a href="#" class="recipe__title">Dark Chocolate Crunch Ice Cream </br>Sandwich Cake</br></a>
+                    <span class="recipe__subtitle"><img src="img/clockicon.png" alt=""> 15 mins | <img src="img/commenticon.png" alt=""> 4 <img src="img/viewicon.png" alt=""> 167</span> 
+                </div>                
+            </div>
+            <hr>
+            <div class="main-block main-block--height-up">
+                <div class="complexity">
+                    <a href="#" class="complexity__level">easy</a>
+                    <a href="#" class="complexity__level">middle</a>
+                    <a href="#" class="complexity__level">long</a>
+                </div>
+                <div class="comment-block">
+                    <img class='comment__img' src="img/small1.png" alt="">
+                    by <span class="comment__author">Smuckersreg Toppings </span>
+                    <span class="comment__text">Thanks for the recipe
+                        lorem ipsum bla bla bla</span>
+                </div>
+                <div class="comment-block">
+                    <img class='comment__img' src="img/small2.png" alt="">
+                    by <span class="comment__author">Smuckersreg Toppings </span>
+                    <span class="comment__text">Thanks for the recipe
+                        lorem nks for the recipe</span>
+                </div>
+                <div class="comment-block">
+                    <img class='comment__img' src="img/small3.png" alt="">
+                    by <span class="comment__author">Smuckersreg Toppings </span>
+                    <span class="comment__text">Thanks for the recipe
+                        lorem nks for the recipe</span>
+                </div>
+                <div class="social-networks">
+                    <img src="img/socialmediaicon.png" alt="">
+                    <a href="#" class="btn">view more</a>
+                </div>
+                
+            </div>
+            <hr>
+            <div class="main-block popular-now">
+                <div class="title">
+                    Popular Now
+                </div>
+                <h1>Vanilla Frozen Coffee</h1>
+                <p>Mix coffee, sugar and creamer. </br>
+                Puor into blender and add ice cubes. </br>
+                Blend until smooth.</p>
+                <div class="recipe__subtitle">
+                    <a href="#" class="btn">get it recipe</a>
+                    <img src="img/clockicon.png" alt=""> 6 mins | <img src="img/commenticon.png" alt=""> 24 | <img src="img/viewicon.png" alt=""> 4000
+                </div>                
+            </div>            
+        </main>
+        <footer>
+            <img class="footer-logo" src="img/footerlogo.png"> 
+            <img src="img/socialmediafooter.png" alt="" class="footer-social-media">
+            <nav>
+                <ul class="menu-footer">
+                    <a href="#"><li>home</li></a>
+                    <a href="#"><li>recipes</li></a>
+                    <a href="#"><li>photo galleries</li></a>
+                    <a href="#"><li>videos</li></a>
+                    <a href="#"><li>all categories</li></a>
+                </ul>
+            </nav>
+            <hr>
+            <div class="rights">
+                2016-2019 LEMON. </br>
+                ALL RIGHTS RESERVED
+            </div>   
+        </footer>
+</body>
+</html>
