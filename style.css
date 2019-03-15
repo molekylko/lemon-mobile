@@ -5,8 +5,8 @@ body {
     background-color: #eaeaea;
     margin: 0;
     height: auto; 
-    min-width: 320px; 
-    max-width: 420px;
+    width: 100%;
+    max-width: 600px;
 }
 
 
@@ -48,7 +48,6 @@ header {
     left: -27px;
     
     height: 12px;
-    font-family: JosefinSans;
     font-size: 12px;
     font-weight: 300;
     font-style: normal;
